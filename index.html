@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To Do Tasks</title>
+	<link rel="stylesheet" href="style.css" />
+	
+	
+</head>
+<body>
+	
+	<header>
+		<h1>Add Task </h1>
+		<form id="new-task-form">
+			<div class="fir">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Title of Task" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add Task"
+				onclick="change()"/>
+			</div>
+			<div class="sec">
+				<input 
+				type="text" 
+				name="new-task-des" 
+				id="new-task-des" 
+				placeholder="Info of the task" />
+				<input 
+				type="text" 
+				name="new-task-date" 
+				id="new-task-date" 
+				onmouseover="(this.type = 'date')"
+				placeholder="Due"
+				 />
+			</div>
+
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+		<div class="third" id="third">
+			<h2>To-Do</h2>
+			<!--
+			
+			<i class="bin"></i>
+					-->
+			<div id="cnt" ></div>
+			
+			
+			
+		</div>
+
+			<div id="tasks">
+				<!--<div class="task">
+					<div class="content">
+						<button type="button" onclick=show() class="collapse" ></button>
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="done">Done</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> 
+					<div class="task_des" >
+						<div class="descrp">
+						<input type="text" class="des" id="desp" value="des" readonly>
+						<input type="text" class="date" id="dates"value="date" readonly>
+					</div> </div> -->
+			</div>
+			
+		</section>
+	</main>
+
+	
+</body>
+<script src="index.js"></script>
+</html>
